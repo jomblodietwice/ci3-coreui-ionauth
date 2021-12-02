@@ -98,7 +98,7 @@ Untuk __Ion Auth__ lakukan konfigurasi untuk *<span style="color:red">site title
 
 ### CoreUI
 *File* contoh __HTML, assets, JS,__ dan __CSS CoreUI__ bisa dilihat di *folder* __assets/coreui/__. Sedangkan penggunaan __CoreUI__ bisa dilihat [disini](https://coreui.io/docs/4.0/getting-started/introduction/). <br>
-Salah satu kelebihan __CoreUI__ yang menarik yaitu pada _sidebar_ disalah satu menunya ter-_highlight_ otomatis jika halaman sekarang terbuka. Jadi _dev_ __PHP__ tidak perlu lagi membuat pengecekan link sekarang menggunakan _script_ __PHP__ atau __Javascript__.
+Salah satu kelebihan __CoreUI__ yang menarik yaitu pada _sidebar_ disalah satu menunya ter-_highlight_ otomatis jika halaman sekarang terbuka. Jadi para _developer_ __PHP__ tidak perlu lagi membuat pengecekan link sekarang yang terbuka menggunakan _script_ __PHP__ atau __Javascript__.
 
 
 ## Donasi
