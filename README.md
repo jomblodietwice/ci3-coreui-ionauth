@@ -3,7 +3,7 @@
 ## Pengantar
 ---
 Repo ini merupakan paket (pack) dari kombinasi framework __Codeigniter 3__, _admin template_ __CoreUI (free)__ dan _library_ __Ion Auth__. 
-Repo ini dibuat untuk memudahkan rekan-rekan _programmer_ __PHP__ _base_ untuk membuat projek yang membutuhkan _admin module_. Dalam repo ini sudah tersedia otorisasi _user_ menggunakan __Ion Auth__ dan view-nya menggunakan __CoreUI free edition__. Dengan menggunakan repo ini Anda tinggal membuat _module/controller_ Anda sendiri sesuai kebutuhan projek, contoh-contoh tag HTML __CoreUI__ sudah ada demikian pula penggunaan _library_ __Ion Auth semuanya__ sudah terinstal. Jadi Anda tidak perlu membuat lagi modul otentikasi dari nol.
+Repo ini dibuat untuk memudahkan rekan-rekan _programmer_ __PHP__ _base_ untuk membuat projek yang membutuhkan _admin module_. Dalam repo ini sudah tersedia otorisasi _user_ menggunakan __Ion Auth__ dan _view_-nya menggunakan __CoreUI free edition__. Dengan menggunakan repo ini Anda tinggal membuat _module/controller_ Anda sendiri sesuai kebutuhan projek, contoh-contoh tag HTML __CoreUI__ sudah ada demikian pula penggunaan _library_ __Ion Auth__ semuanya sudah terinstal. Jadi Anda tidak perlu membuat lagi modul otentikasi dari nol.
 
 #### Fitur:
 - Halaman *Login* dan *link logout*.
