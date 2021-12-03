@@ -18,11 +18,10 @@ Catatan: untuk _view error exception_ dan _error DB_ masih bawaan __CodeIgniter 
 
 
 ## Demo
----
 Untuk demo silahkan lihat [DISINI](http://www.youtube.com).
 
 ## Penggunaan 
----
+
 ### Setup CodeIgniter 3:
 1. Atur *config <span style="color:red">base_url, log_threshold, encryption_key, session variable, csrf, compress_output</span>* Anda pada *file* __application/config/config.php__ sesuai kebutuhan projek Anda. 
 2. Beritahu __CodeIgniter 3__ kofigurasi *database* Anda di *file* __application/config/database.php__
@@ -102,7 +101,6 @@ Salah satu kelebihan __CoreUI__ yang menarik yaitu pada _sidebar_ disalah satu m
 
 
 ## Donasi
----
 Jika Anda merasa repo ini berguna bagi Anda dan merasa ingin traktir kami secangkir kopi bisa disalurkan lewat __QR Code DANA__ kami atau melalui __[Saweria](https://saweria.co/jomblodietwice)__.
 
 ### DANA
