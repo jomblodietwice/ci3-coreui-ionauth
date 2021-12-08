@@ -18,7 +18,7 @@ Catatan: untuk _view error exception_ dan _error DB_ masih bawaan __CodeIgniter 
 
 
 ## Demo
-Untuk demo silahkan lihat [DISINI](http://www.youtube.com).
+Untuk demo silahkan lihat [DISINI](http://www.youtube.com) (video).
 
 ## Penggunaan 
 
@@ -29,6 +29,8 @@ Untuk demo silahkan lihat [DISINI](http://www.youtube.com).
 4. Import tabel-tabel __ION AUTH__ ke dalam *database* Anda, *file*-nya berada pada folder __application/third_party/ion_auth/sql/__
 5. Jika sudah pada tahap *production* jangan lupa ubah semua *file config* __CodeIgniter 3__ pada __application/config/production/__
 
+
+#### Membuat _Controller_ Baru
 Sebelum membuat *controller* baru tentukan dulu siapa yang bisa mengakses *controller* tersebut apakah admin, user biasa atau grup user tertentu. Karena itu ditiap *controller* perlu dibuat:
 ```
 public function __construct()
@@ -36,8 +38,26 @@ public function __construct()
    parent::__construct();
 }
 ```
+Dan untuk memanggil _view_ gunakan `$this->render('nama_view');` jadi kodingan dasarnya seperti ini jika membuat _controller_ baru.
+```
+<?php defined('BASEPATH') or exit('No direct script access allowed');
 
-Gunakan kode berikut setelah `parent::__construct()`, jika:
+class Mynewcontroller extends MY_Controller
+{
+   public function __construct()
+   {
+      parent::__construct();      
+   }
+
+   public function index()
+   {      
+      $this->data['titlePage] = 'My New Controller';
+      $this->render('dashboard_view');
+   }
+}
+```
+
+Untuk pembatasan akses gunakan kode berikut setelah `parent::__construct()`, jika:
 - pada *controller* hanya ingin diperiksa apakah user sudah login atau belum 
 ```
 if (!$this->ion_auth->logged_in()) {
