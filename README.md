@@ -50,7 +50,7 @@ public function __construct()
    parent::__construct();
 }
 ```
-Dan untuk memanggil _view_ gunakan `$this->render('nama_view');` dan pastikan buat _file view_-nya berada dibawah _folder_ __application/views/coreui/__. Silahkan pelajari kodingan __MY_Controller__ di __application/core/__. Berikut kodingan dasarnya jika membuat _controller_ baru.
+Dan untuk memanggil _view_ gunakan `$this->render('nama_view');` dan pastikan buat _file view_-nya berada dibawah _folder_ __application/views/coreui/__. Silahkan pelajari kodingan __MY_Controller__ di __application/core/__. Berikut kodingan dasar jika membuat _controller_ baru.
 ```
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
