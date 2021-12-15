@@ -29,8 +29,20 @@ Untuk demo silahkan lihat [DISINI](http://www.youtube.com) (video).
 4. Import tabel-tabel __ION AUTH__ ke dalam *database* Anda, *file*-nya berada pada folder __application/third_party/ion_auth/sql/__
 5. Jika sudah pada tahap *production* jangan lupa ubah semua *file config* __CodeIgniter 3__ pada __application/config/production/__
 
+### Setup ION AUTH
 
-#### Membuat _Controller_ Baru
+Untuk __Ion Auth__ lakukan konfigurasi untuk *<span style="color:red">site title, admin email, method hash, session hash</span>* pada *file* __application/third_party/ion_auth/config/ion_auth.php__, selengkapnya bisa dilihat [disini](http://benedmunds.com/ion_auth/). 
+
+#### Bawaan Otorisasi User
+- email: *admin@admin.com*
+- password: *password*
+
+### CoreUI
+*File* contoh __HTML, assets, JS,__ dan __CSS CoreUI__ bisa dilihat di *folder* __assets/coreui/__. Sedangkan penggunaan __CoreUI__ bisa dilihat [disini](https://coreui.io/docs/4.0/getting-started/introduction/). <br>
+Salah satu kelebihan __CoreUI__ yang menarik yaitu pada _sidebar_ disalah satu menunya ter-_highlight_ otomatis jika halaman sekarang terbuka. Jadi para _developer_ __PHP__ tidak perlu lagi membuat pengecekan link sekarang yang terbuka menggunakan _script_ __PHP__ atau __Javascript__.
+
+
+### Membuat _Controller_ Baru
 Sebelum membuat *controller* baru tentukan dulu siapa yang bisa mengakses *controller* tersebut apakah admin, user biasa atau grup user tertentu. Karena itu ditiap *controller* perlu dibuat:
 ```
 public function __construct()
@@ -38,7 +50,7 @@ public function __construct()
    parent::__construct();
 }
 ```
-Dan untuk memanggil _view_ gunakan `$this->render('nama_view');` jadi kodingan dasarnya seperti ini jika membuat _controller_ baru.
+Dan untuk memanggil _view_ gunakan `$this->render('nama_view');` dan pastikan buat _file view_-nya berada dibawah _folder_ __application/views/coreui/__. Silahkan pelajari kodingan __MY_Controller__ di __application/core/__. Berikut kodingan dasarnya jika membuat _controller_ baru.
 ```
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
@@ -107,17 +119,15 @@ if (!$this->ion_auth->in_group($group)) {
 // }
 ```
 
-### Setup ION AUTH
-
-Untuk __Ion Auth__ lakukan konfigurasi untuk *<span style="color:red">site title, admin email, method hash, session hash</span>* pada *file* __application/third_party/ion_auth/config/ion_auth.php__, selengkapnya bisa dilihat [disini](http://benedmunds.com/ion_auth/). 
-
-#### Otorisasi bawaan User
-- email: *admin@admin.com*
-- password: *password*
-
-### CoreUI
-*File* contoh __HTML, assets, JS,__ dan __CSS CoreUI__ bisa dilihat di *folder* __assets/coreui/__. Sedangkan penggunaan __CoreUI__ bisa dilihat [disini](https://coreui.io/docs/4.0/getting-started/introduction/). <br>
-Salah satu kelebihan __CoreUI__ yang menarik yaitu pada _sidebar_ disalah satu menunya ter-_highlight_ otomatis jika halaman sekarang terbuka. Jadi para _developer_ __PHP__ tidak perlu lagi membuat pengecekan link sekarang yang terbuka menggunakan _script_ __PHP__ atau __Javascript__.
+### Membuat _View_ dari _Controller_
+Membuat _View_ baru akan selalu dimulai dengan _tag_ HTML berikut:
+```
+<div class="container-lg">
+   <div class="row">
+   // isi data dari controller
+   </div>
+</div>
+```
 
 
 ## Donasi
