@@ -18,7 +18,7 @@ Catatan: untuk _view error exception_ dan _error DB_ masih bawaan __CodeIgniter 
 
 
 ## Demo
-Untuk demo silahkan lihat [DISINI](http://www.youtube.com) (video).
+Untuk demo silahkan lihat [DISINI](https://youtu.be/DgQ-1Z27XU4) (video).
 
 ## Penggunaan 
 
