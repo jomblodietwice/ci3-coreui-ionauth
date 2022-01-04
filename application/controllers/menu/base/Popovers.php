@@ -16,6 +16,7 @@ class Popovers extends MY_Controller
 
    public function index()
    {
+      $this->data['loadMyJS'] = ['js/popovers.js'];
       $this->render('menu' . DIRECTORY_SEPARATOR . 'base' . DIRECTORY_SEPARATOR . 'popovers_view');
    }
 }

@@ -16,6 +16,11 @@ class Charts extends MY_Controller
 
    public function index()
    {
+      $this->data['loadMyJS'] = [
+         'vendors/chart.js/js/chart.min.js',
+         'vendors/@coreui/chartjs/js/coreui-chartjs.js',
+         'js/charts.js'
+      ];
       $this->render('menu' . DIRECTORY_SEPARATOR . 'charts_view');
    }
 }

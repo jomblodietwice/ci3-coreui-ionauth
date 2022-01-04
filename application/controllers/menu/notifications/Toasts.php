@@ -16,6 +16,7 @@ class Toasts extends MY_Controller
 
    public function index()
    {
+      $this->data['loadMyJS'] = ['js/toasts.js'];
       $this->render('menu' . DIRECTORY_SEPARATOR . 'notifications' . DIRECTORY_SEPARATOR . 'toasts_view');
    }
 }

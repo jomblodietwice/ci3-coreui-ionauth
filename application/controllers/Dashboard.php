@@ -15,6 +15,10 @@ class Dashboard extends MY_Controller
 
    public function index()
    {
+      $this->data['loadMyJS'] = [
+         'vendors/chart.js/js/chart.min.js',
+         'vendors/@coreui/chartjs/js/coreui-chartjs.js'
+      ];
       // dalam view diberi batasan hanya stat tertentu yg bisa dilihat non admin
       $this->render('dashboard_view');
    }

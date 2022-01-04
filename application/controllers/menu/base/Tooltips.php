@@ -16,6 +16,7 @@ class Tooltips extends MY_Controller
 
    public function index()
    {
+      $this->data['loadMyJS'] = ['js/tooltips.js'];
       $this->render('menu' . DIRECTORY_SEPARATOR . 'base' . DIRECTORY_SEPARATOR . 'tooltips_view');
    }
 }
