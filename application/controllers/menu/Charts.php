@@ -21,6 +21,8 @@ class Charts extends MY_Controller
          'vendors/@coreui/chartjs/js/coreui-chartjs.js',
          'js/charts.js'
       ];
+
+      $this->data['loadMyCSS']  = ['vendors/@coreui/chartjs/css/coreui-chartjs.css'];
       $this->render('menu' . DIRECTORY_SEPARATOR . 'charts_view');
    }
 }

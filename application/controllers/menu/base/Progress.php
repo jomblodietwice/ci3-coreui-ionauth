@@ -16,6 +16,8 @@ class Progress extends MY_Controller
 
    public function index()
    {
+      $this->data['loadMyCSS']  = ['vendors/@coreui/chartjs/css/coreui-chartjs.css'];
+
       $this->render('menu' . DIRECTORY_SEPARATOR . 'base' . DIRECTORY_SEPARATOR . 'progress_view');
    }
 }

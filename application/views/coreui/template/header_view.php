@@ -54,5 +54,3 @@ defined('BASEPATH') or exit('No direct script access allowed');
       echo '<link href="' . base_url('assets/coreui/') . $MyCSS . '" rel="stylesheet">';
    }
 } ?>
-
-<link href="<?php echo base_url('assets/coreui/'); ?>vendors/@coreui/chartjs/css/coreui-chartjs.css" rel="stylesheet">
