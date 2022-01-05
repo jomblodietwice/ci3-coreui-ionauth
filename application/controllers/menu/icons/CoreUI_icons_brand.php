@@ -16,6 +16,8 @@ class CoreUI_icons_brand extends MY_Controller
 
    public function index()
    {
+      $this->data['loadMyCSS']  = ['vendors/@coreui/icons/css/brand.min.css'];
+
       $this->render('menu' . DIRECTORY_SEPARATOR . 'icons' . DIRECTORY_SEPARATOR . 'coreui_icons_brand_view');
    }
 }

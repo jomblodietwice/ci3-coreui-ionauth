@@ -13,6 +13,7 @@ class MY_Controller extends CI_Controller
       // $this->lang->load('auth');
       $this->data['titlePage'] = 'CodeIgniter 3 - CoreUI Free - ION Auth Admin Template';
       $this->data['loadMyJS']  = false;
+      $this->data['loadMyCSS']  = false;
    }
 
    protected function render($de_view = NULL, $template = 'base')
@@ -28,6 +29,7 @@ class MY_Controller extends CI_Controller
          unset($this->data['footer']);
          unset($this->data['js']);
          unset($this->data['loadMyJS']);
+         unset($this->data['loadMyCSS']);
 
          header('Content-Type: application/json');
          echo json_encode($this->data);

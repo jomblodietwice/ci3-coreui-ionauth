@@ -49,11 +49,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
       // Bootstrap ID
       gtag('config', 'UA-118965717-5');
    </script> -->
-<?php if (uri_string() == 'menu/icons/coreui_icons_flag') { ?>
-   <link href="<?php echo base_url('assets/coreui/'); ?>vendors/@coreui/icons/css/flag.min.css" rel="stylesheet">
-<?php } elseif (uri_string() == 'menu/icons/coreui_icons_brand') { ?>
-   <link href="<?php echo base_url('assets/coreui/'); ?>vendors/@coreui/icons/css/brand.min.css" rel="stylesheet">
-<?php } else { ?>
-   <link href="<?php echo base_url('assets/coreui/'); ?>vendors/@coreui/icons/css/free.min.css" rel="stylesheet">
-<?php } ?>
+<?php if (is_array($loadMyCSS)) {
+   foreach ($loadMyCSS as $MyCSS) {
+      echo '<link href="' . base_url('assets/coreui/') . $MyCSS . '" rel="stylesheet">';
+   }
+} ?>
+
 <link href="<?php echo base_url('assets/coreui/'); ?>vendors/@coreui/chartjs/css/coreui-chartjs.css" rel="stylesheet">
