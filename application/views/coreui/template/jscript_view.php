@@ -13,13 +13,11 @@
    }
 } ?>
 
-<script src="<?php echo base_url('assets/coreui/'); ?>vendors/@coreui/utils/js/coreui-utils.js"></script>
+
 
 <!-- JS ini mesti di-load setelah JS diatas -->
-<?php if (uri_string() == 'menu/Widgets') { ?>
-   <script src="<?php echo base_url('assets/coreui/'); ?>js/widgets.js"></script>
-<?php } ?>
 
-<script src="<?php echo base_url('assets/coreui/'); ?>js/main.js"></script>
+
+
 <script>
 </script>

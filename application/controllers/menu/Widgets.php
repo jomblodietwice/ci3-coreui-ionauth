@@ -18,7 +18,9 @@ class Widgets extends MY_Controller
    {
       $this->data['loadMyJS'] = [
          'vendors/chart.js/js/chart.min.js',
-         'vendors/@coreui/chartjs/js/coreui-chartjs.js'
+         'vendors/@coreui/chartjs/js/coreui-chartjs.js',
+         'vendors/@coreui/utils/js/coreui-utils.js',
+         'js/widgets.js'
       ];
       $this->render('menu' . DIRECTORY_SEPARATOR . 'widgets_view');
    }

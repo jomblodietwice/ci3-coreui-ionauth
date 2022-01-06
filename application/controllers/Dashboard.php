@@ -17,7 +17,9 @@ class Dashboard extends MY_Controller
    {
       $this->data['loadMyJS'] = [
          'vendors/chart.js/js/chart.min.js',
-         'vendors/@coreui/chartjs/js/coreui-chartjs.js'
+         'vendors/@coreui/chartjs/js/coreui-chartjs.js',
+         'vendors/@coreui/utils/js/coreui-utils.js',
+         'js/main.js'
       ];
       $this->data['loadMyCSS']  = false;
       // dalam view diberi batasan hanya stat tertentu yg bisa dilihat non admin
